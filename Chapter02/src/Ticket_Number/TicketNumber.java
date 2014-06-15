@@ -25,7 +25,7 @@ import javax.swing.*;
  * Step 3 Determine the remainder when the ticket number is divided by 7. In this  case, 12345 divided by 7 leaves a
  * remainder of 4.
  * Step 4 Assign the Boolean value of the comparison between the remainder and the digit dropped from a ticket number.
- * Step 5 Display the result—true or false—in a message box.
+ * Step 5 Display the result&mdash;true or false&mdash;in a message box.
  * *******************************************************************************************************************
  */
 public class TicketNumber
