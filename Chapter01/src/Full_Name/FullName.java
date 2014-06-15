@@ -5,6 +5,9 @@ package Full_Name;
  * Filename:    FullName
  * Created By:  Kimberly Henry
  * On: 15-Jun-2014 At: 5:06 PM
+ *
+ * Write, compile, and test a class that displays your full name on the screen. Save the
+ * class as FullName.java.
  */
 public class FullName
 	{
