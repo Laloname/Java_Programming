@@ -7,6 +7,7 @@ import java.util.*;
  * File:  DogBoarding
  * Created by:  Kimberly Henry
  * On 4/15/2014 at 4:32 AM.
+ *
  * The Happy Yappy Kennel boards dogs at a cost of 50 cents per pound per day. Write
  * a class that accepts a dog’s weight and number of days to be boarded and displays the
  * total price for boarding. Save the class as DogBoarding.java.

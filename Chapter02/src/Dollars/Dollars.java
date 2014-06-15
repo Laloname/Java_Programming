@@ -6,8 +6,7 @@ import java.util.*;
  * File:  Dollars
  * Created by:  Kimberly Henry
  * On 4/15/2014 at 5:19 AM.
- * <p/>
- * <p/>
+ *
  * Write a class that calculates and displays the conversion of an entered number of dollars
  * into currency denominations—20s, 10s, 5s, and 1s. Save the class as Dollars.java.
  */

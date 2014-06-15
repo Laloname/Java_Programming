@@ -6,7 +6,7 @@ import javax.swing.*;
  * File:  FahrenheitToCelsius
  * Created by:  Kimberly Henry
  * On 4/17/2014 at 3:27 AM.
- * <p/>
+ *
  * Write a program that accepts a temperature in Fahrenheit from a user and converts
  * it to Celsius by subtracting 32 from the Fahrenheit value and multiplying the result
  * by 5/9. Display both values. Save the class as FahrenheitToCelsius.java.

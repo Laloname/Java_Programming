@@ -1,11 +1,12 @@
 package Table_And_Chairs;
 /**
- * Project:     Chapter 01
- * Package:     Table_And_Chairs
- * Filename:    TableAndChairs
+ * Project:  Java Programming
+ * Package:  Table_And_Chairs
+ * Filename:   TableAndChairs
  * Created By:  Kimberly Henry
  * On: 29-May-2014 At: 6:16 PM
- * Added to Git on 14-May-2014.
+ * Write, compile, and test a class that displays the  pattern of
+ * table and chairs on the screen:
  */
 public class TableAndChairs
 	{

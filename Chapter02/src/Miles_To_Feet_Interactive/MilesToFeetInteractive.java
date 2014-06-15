@@ -6,7 +6,7 @@ import java.util.*;
  * File:  MilesToFeetInteractive
  * Created by:  Kimberly
  * On 4/14/2014 at 10:02 PM.
- * <p/>
+ *
  * Convert the MilesToFeet class to an interactive application. Instead of assigning
  * a value to the distance, accept the value from the user as input. Save the revised
  * class as MilesToFeetInteractive.java

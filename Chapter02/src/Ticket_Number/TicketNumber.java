@@ -6,7 +6,7 @@ import javax.swing.*;
  * File:  TicketNumber
  * Created by:  Kimberly Henry
  * On 4/17/2014 at 4:56 PM.
- * <p/>
+ *
  * Travel Tickets Company sells tickets for airlines, tours, and other travel-related services. Because ticket agents
  * frequently mistype long ticket numbers, Travel Tickets has asked you to write an application that indicates invalid
  * ticket number entries. The class prompts a ticket agent to enter a six-digit ticket number. Ticket numbers are

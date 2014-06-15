@@ -6,7 +6,7 @@ import javax.swing.*;
  * File:  InchesToFeetInteractive
  * Created by:  Kimberly
  * On 4/15/2014 at 1:01 AM.
- * <p/>
+ *
  * Write an interactive version of the InchesToFeet class that accepts the inches
  * value from a user. Save the class as InchesToFeetInteractive.java.
  */

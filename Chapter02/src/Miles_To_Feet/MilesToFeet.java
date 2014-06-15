@@ -5,7 +5,7 @@ package Miles_To_Feet;
  * File:  MilesToFeet
  * Created by:  Kimberly
  * On 4/14/2014 at 9:45 PM.
- * <p/>
+ *
  * Write a Java class that declares a named constant that holds the number of feet in
  * a mile: 5,280. Also declare a variable to represent the distance in miles between
  * your house and your uncle’s house. Assign an appropriate value to the variable—

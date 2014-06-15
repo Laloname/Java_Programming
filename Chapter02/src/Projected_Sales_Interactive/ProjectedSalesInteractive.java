@@ -7,7 +7,7 @@ import java.text.*;
  * File:  ProjectedSalesInteractive
  * Created by:  Kimberly
  * On 4/14/2014 at 11:24 PM.
- * <p/>
+ *
  * Convert the ProjectedSales class to an interactive application. Instead of
  * assigning values to the North and South current year sales variables, accept them
  * from the user as input. Save the revised class as ProjectedSalesInteractive.java.

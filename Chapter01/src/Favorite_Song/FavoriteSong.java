@@ -1,13 +1,13 @@
 package Favorite_Song;
 /**
- * Project:     Chapter 01
- * Package:     Favorite_Song
- * Filename:    FavoriteSong
+ * Project:  Java Programming
+ * Package: Favorite_Song
+ * Filename:  FavoriteSong
  * Created By:  Kimberly Henry
  * On: 29-May-2014 At: 6:59 PM
+ *
  * Write, compile, and test a class that displays at least four lines of your favorite song.
  * Save the class as FavoriteSong.
- * Added to Git on 14-May-2014.
  */
 public class FavoriteSong
 	{

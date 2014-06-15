@@ -6,7 +6,7 @@ import java.text.*;
  * File:  ProjectedSales
  * Created by:  Kimberly
  * On 4/14/2014 at 10:08 PM.
- * <p/>
+ *
  * Write a Java class that declares a named constant that represents next year’s anticipated 10 percent increase
  * in sales for each division of a company. (You can represent 10 percent as 0.10.) Also declare variables to
  * represent this year’s sales total in dollars for the North and South divisions. Assign appropriate values to

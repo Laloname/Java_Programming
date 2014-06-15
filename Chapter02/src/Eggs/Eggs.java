@@ -6,7 +6,7 @@ import java.util.*;
  * Filename:    Eggs
  * Created By:  Kimberly Henry
  * On: 13-Jun-2014 At: 10:21 PM
- * <p/>
+ *
  * Meadowdale Dairy Farm sells organic brown eggs to local customers. They charge
  * $3.25 for a dozen eggs, or 45 cents for individual eggs that are not part of a dozen.
  * Write a class that prompts a user for the number of eggs in the order and then
