@@ -21,7 +21,7 @@ public class FahrenheitToCelsius
 				                                    "PATIENTS TEMPERATURE", JOptionPane.QUESTION_MESSAGE);
 				tempFahrenheit = Double.parseDouble(temps);
 				double tempCelsius = (tempFahrenheit - 32) / 1.8;
-				JOptionPane.showMessageDialog(null, "The patients temperature in celsisus is " + tempCelsius + ".",
+				JOptionPane.showMessageDialog(null, "The patients temperature in celsius is " + tempCelsius + ".",
 				                              "CELSIUS TEMPERATURE", JOptionPane.PLAIN_MESSAGE);
 			}
 	}
