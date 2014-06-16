@@ -1,7 +1,7 @@
-package Bakery;
+package Sandwich;
 /**
  * Project:     Java Programming
- * Package:     Bakery.Bakery
+ * Package:     Sandwich
  * Filename:    TestSandwich
  * Created By:  Kimberly Henry
  * On: 16-Jun-2014 At: 7:55 AM
@@ -14,6 +14,7 @@ public class TestSandwich
 	{
 		public static void main(String[] args)
 			{
+				//todo  This class should be done over; does not function as intended.
 				Sandwich firstSandwich = new Sandwich();
 				System.out.println(firstSandwich.getSandwichFilling());
 				System.out.println(firstSandwich.getTypeBread());

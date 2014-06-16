@@ -1,8 +1,8 @@
-package Bakery;
+package Sandwich;
 import java.util.Scanner;
 /**
  * Project:     Java Programming
- * Package:     Bakery.Bakery
+ * Package:     Sandwich
  * Filename:    Sandwich
  * Created By:  Kimberly Henry
  * On: 16-Jun-2014 At: 7:54 AM
@@ -13,6 +13,7 @@ import java.util.Scanner;
  */
 public class Sandwich
 	{
+		//todo  This class should be done over; does not function as intended.
 		private String sandwichFilling;
 		private String typeBread;
 		private double sandwichPrice;

@@ -5,8 +5,9 @@ import java.util.*;
  * Package:     Student
  * Filename:    Student
  * Created By:  Kimberly Henry
- * On: 16-Jun-2014 At: 9:47 AM
- *
+ * On: 16-Jun-2014 At: 9:47 AM**/
+//todo  This class should be done over; does not function as intended.
+/**
  * Create a class named Student. A Student has fields for an ID number, number of credit hours earned, and number of
  * points earned. (For example, many schools compute grade point averages based on a scale of 4, so a three-credit-hour
  * class in which a student earns an A is worth 12 points.) Include methods to assign values to all fields. A Student
@@ -16,6 +17,7 @@ import java.util.*;
  */
 public class Student
 	{
+		//		code does not function as intended.
 		private int studentID;
 		private int studentCreditHours;
 		private int studentPointsEarned;
@@ -30,12 +32,12 @@ public class Student
 		//Parameters and setters constructor
 		public Student(int id, int hours, int earned)
 			{
-				studentID = id;
-				studentCreditHours = hours;
-				studentPointsEarned = earned;
+				this.studentID = id;
+				this.studentCreditHours = hours;
+				this.studentPointsEarned = earned;
 			}
 		//Constructor to get data interactively
-		public static Student.Student getData()
+		public static void getData()
 			{
 				Scanner enter = new Scanner(System.in);
 				System.out.println("Enter Student Id:  ");
@@ -44,23 +46,22 @@ public class Student
 				int studentCreditHours = enter.nextInt();
 				System.out.println("Enter Points Earned:  ");
 				int studentPointsEarned = enter.nextInt();
-				return new Student.Student(studentID, studentCreditHours, studentPointsEarned);
 			}
 		public int getStudentID()
 			{
-				return studentID;
+				return this.studentID;
 			}
 		public int getStudentCreditHours()
 			{
-				return studentCreditHours;
+				return this.studentCreditHours;
 			}
 		public int getStudentPointsEarned()
 			{
-				return studentPointsEarned;
+				return this.studentPointsEarned;
 			}
 		public double calculateGpa()
 			{
-				gpa = getStudentPointsEarned() / getStudentCreditHours();
-				return gpa;
+				this.gpa = this.getStudentPointsEarned() / this.getStudentCreditHours();
+				return this.gpa;
 			}
 	}
