@@ -5,7 +5,7 @@ package Big_Java_Word;
  * Filename:    BigJavaWord
  * Created By:  Kimberly Henry
  * On: 29-May-2014 At: 6:34 PM
- *
+ * <p/>
  * Write, compile, and test a class that displays the word Java on the screen.
  * Compose each large letter using the appropriate characters J, A, V, and A.
  */

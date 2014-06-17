@@ -1,13 +1,12 @@
 package Student;
-import java.util.*;
 /**
- * Project:     Java Programming
- * Package:     Student
- * Filename:    Student
- * Created By:  Kimberly Henry
- * On: 16-Jun-2014 At: 9:47 AM**/
-//todo  This class should be done over; does not function as intended.
-/**
+ * Project:  Java Programming
+ * Package:  NewStudent
+ * File:  Student
+ * Created by Kimberly Henry <kimbelry.henry@outlook.com>
+ * On 17-Jun-2014
+ * At: 6:14 PM
+ *
  * Create a class named Student. A Student has fields for an ID number, number of credit hours earned, and number of
  * points earned. (For example, many schools compute grade point averages based on a scale of 4, so a three-credit-hour
  * class in which a student earns an A is worth 12 points.) Include methods to assign values to all fields. A Student
@@ -17,51 +16,47 @@ import java.util.*;
  */
 public class Student
 	{
-		//		code does not function as intended.
-		private int studentID;
-		private int studentCreditHours;
-		private int studentPointsEarned;
-		double gpa;
-		//Default constructor
-		public Student()
+		private int studentId;
+		private int creditHoursEarned;
+		private int pointsEarned;
+		private double gradePointAverage;
+		public void setStudentId(int id)
 			{
-				studentID = 9999;
-				studentCreditHours = 12;
-				studentPointsEarned = 16;
+				studentId = id;
 			}
-		//Parameters and setters constructor
-		public Student(int id, int hours, int earned)
+		public int getStudentId()
 			{
-				this.studentID = id;
-				this.studentCreditHours = hours;
-				this.studentPointsEarned = earned;
+				return studentId;
 			}
-		//Constructor to get data interactively
-		public static void getData()
+		public void setCreditHoursEarned(int che)
 			{
-				Scanner enter = new Scanner(System.in);
-				System.out.println("Enter Student Id:  ");
-				int studentID = enter.nextInt();
-				System.out.println("Enter Student Credit Hours:  ");
-				int studentCreditHours = enter.nextInt();
-				System.out.println("Enter Points Earned:  ");
-				int studentPointsEarned = enter.nextInt();
+				creditHoursEarned = che;
 			}
-		public int getStudentID()
+		public int getCreditHoursEarned()
 			{
-				return this.studentID;
+				return creditHoursEarned;
 			}
-		public int getStudentCreditHours()
+		public void setPointsEarned(int pe)
 			{
-				return this.studentCreditHours;
+				pointsEarned = pe;
 			}
-		public int getStudentPointsEarned()
+		public int getPointsEarned()
 			{
-				return this.studentPointsEarned;
+				return pointsEarned;
 			}
-		public double calculateGpa()
+		public void setGradePointAverage()
 			{
-				this.gpa = this.getStudentPointsEarned() / this.getStudentCreditHours();
-				return this.gpa;
+				gradePointAverage = pointsEarned / creditHoursEarned;
+			}
+		public double getGradePointAverage()
+			{
+				return gradePointAverage;
+			}
+		public void displayStudentDetails()
+			{
+				System.out.println("Student Id: " + getStudentId());
+				System.out.println("Credit Hours Earned: " + getCreditHoursEarned());
+				System.out.println("Points Earned: " + getPointsEarned());
+				System.out.println("Grade Point Average: " + getGradePointAverage());
 			}
 	}
