@@ -14,5 +14,47 @@ package Bank_Account;
  */
 public class BankAccount
 	{
-		//todo
+		private int accountNumber;
+		private String fullName;
+		private double accountBalance;
+		public BankAccount()
+			{
+				accountNumber = 999999999;
+				fullName = " ";
+				accountBalance = 0;
+			}
+		public void setAccountNumber(int accountNumber)
+			{
+				accountNumber = accountNumber;
+			}
+		public void setFullName(String fullName)
+			{
+				fullName = fullName;
+			}
+		public void setAccountBalance(double accountBalance)
+			{
+				accountBalance = accountBalance;
+			}
+		public int getAccountNumber()
+			{
+				return accountNumber;
+			}
+		public double getAccountBalance()
+			{
+				return accountBalance;
+			}
+		public String getFullName()
+			{
+				return fullName;
+			}
+		public void deductMonthlyFee()
+			{
+				double monthlyFee = 4.00;
+				double newBalance = getAccountBalance() - monthlyFee;
+				System.out.println("Your balance after the monthly fees are " + newBalance);
+			}
+		public void explainAccountPolicy()
+			{
+				System.out.println("The $4 service fee will be deducted each month.");
+			}
 	}

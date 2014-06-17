@@ -1,4 +1,5 @@
 package Bank_Account;
+import java.util.*;
 /**
  * Project:     Java Programming
  * Package:     Bank_Account
@@ -16,5 +17,20 @@ package Bank_Account;
  */
 public class TestBankAccount
 	{
-		//todo
+		public static void main(String[] args)
+			{
+				BankAccount test001 = new BankAccount();
+				BankAccount test002 = new BankAccount();
+				BankAccount test003 = new BankAccount();
+			}
+		public void getData()
+			{
+				Scanner enter = new Scanner(System.in);
+				System.out.println("Enter Bank Account Number: ");
+				BankAccount.se = enter.nextInt();
+				System.out.println("Enter your full name: ");
+				enter.nextLine();
+				System.out.println("Enter account balance: ");
+				enter.nextDouble();
+			}
 	}
