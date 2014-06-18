@@ -10,7 +10,7 @@ package Bird_Sighting;
  * Create an application named TestBirdSighting that demonstrates
  * that each method works correctly. Save the file as TestBirdSighting.java.
  */
-public class TestBirdSighting
+class TestBirdSighting
 	{
 		public static void main(String[] args)
 			{

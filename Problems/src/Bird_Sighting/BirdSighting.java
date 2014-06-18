@@ -27,17 +27,17 @@ public class BirdSighting
 				numberSeen = 1;
 				dateSeen = new GregorianCalendar();
 			}
-		public GregorianCalendar getDateSeen()
+		final public GregorianCalendar getDateSeen()
 			{
 				dateSeen.set(Calendar.DAY_OF_YEAR, 1);
 				dateSeen.get(Calendar.DAY_OF_YEAR);
 				return dateSeen;
 			}
-		public String getBirdSeen()
+		final public String getBirdSeen()
 			{
 				return birdSeen;
 			}
-		public int getNumberSeen()
+		final public int getNumberSeen()
 			{
 				return numberSeen;
 			}
