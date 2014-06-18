@@ -1,4 +1,5 @@
 package Bank_Account;
+import java.util.Scanner;
 /**
  * Project:     Java Programming
  * Package:     Bank_Account
@@ -24,25 +25,26 @@ public class BankAccount
 				accountOwner = " ";
 				accountBalance = 0;
 			}
-		public void setAccountNumber(int acct)
+		public void setAccountNumber()
 			{
-				accountNumber = acct;
+				accountNumber = accountNumber;
 			}
 		public int getAccountNumber()
 			{
 				return accountNumber;
 			}
-		public void setAccountOwner(String owner)
+		public void setAccountOwner()
 			{
-				accountOwner = owner;
+				accountOwner = accountOwner;
 			}
+
 		public String getAccountOwner()
 			{
 				return accountOwner;
 			}
-		public void setAccountBalance(double balance)
+		public void setAccountBalance()
 			{
-				accountBalance = balance;
+				accountBalance = accountBalance;
 			}
 		public double getAccountBalance()
 			{
@@ -51,12 +53,30 @@ public class BankAccount
 		public double deductMonthlyFee()
 			{
 				double monthlyFee = 4.00;
-				double newAccountBalance = accountBalance - monthlyFee;
-				return newAccountBalance;
+				return accountBalance - monthlyFee;
 			}
 		public void explainAccountPolicy()
 			{
 				System.out.println("The $4 service fee will be deducted on a monthly basis.");
 				System.out.println("Your new account balance is " + deductMonthlyFee());
 			}
+		public void getData()
+			{
+				Scanner enter = new Scanner(System.in);
+				System.out.print("Enter account number: ");
+				accountNumber = enter.nextInt();
+				System.out.print("Enter account balance: ");
+				accountBalance = enter.nextDouble();
+				enter.nextLine();
+				System.out.print("Enter account owner: ");
+				accountOwner = enter.nextLine();
+			}
+		public void showData()
+			{
+				System.out.println("Bank Account Number:  " + getAccountNumber());
+				System.out.println("Account Owner:  " + getAccountOwner());
+				System.out.println("Account Balance:  " + getAccountBalance());
+				explainAccountPolicy();
+			}
+
 	}

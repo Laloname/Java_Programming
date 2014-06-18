@@ -1,5 +1,4 @@
 package Bank_Account;
-import java.util.*;
 /**
  * Project:     Java Programming
  * Package:     Bank_Account
@@ -25,8 +24,13 @@ public class TestBankAccount
 				BankAccount test002 = new BankAccount();
 				BankAccount test003 = new BankAccount();
 				BankAccount test004 = new BankAccount();
+				test001.getData();
+				test001.showData();
+				test002.getData();
+				test002.showData();
+				test003.getData();
+				test003.showData();
+				test004.showData();
 			}
-		public void getData()
-			{
-			}
+
 	}
