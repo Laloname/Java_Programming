@@ -1,6 +1,5 @@
 package Bird_Sighting;
 import java.util.Calendar;
-import java.util.Date;
 import java.util.GregorianCalendar;
 /**
  * Project:  Java Programming
@@ -21,18 +20,17 @@ public class BirdSighting
 	{
 		private String birdSeen;
 		private int numberSeen;
-		private int dateseen;
 		private GregorianCalendar dateSeen;
-		public BirdSighting(String birdSeen, int numberSeen, int dateseen)
+		public BirdSighting()
 			{
-				this.birdSeen = "Robin";
-				this.numberSeen = 1;
-				this.dateseen = 1;
+				birdSeen = "Robin";
+				numberSeen = 1;
+				dateSeen = new GregorianCalendar();
 			}
-		public GregorianCalendar getDateSeen(int month, int date)
+		public GregorianCalendar getDateSeen()
 			{
-				dateSeen.set(month, date);
-				dateSeen.get(GregorianCalendar.DAY_OF_YEAR);
+				dateSeen.set(Calendar.DAY_OF_YEAR, 1);
+				dateSeen.get(Calendar.DAY_OF_YEAR);
 				return dateSeen;
 			}
 		public String getBirdSeen()

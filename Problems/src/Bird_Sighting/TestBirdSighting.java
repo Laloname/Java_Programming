@@ -12,5 +12,11 @@ package Bird_Sighting;
  */
 public class TestBirdSighting
 	{
-		//todo
+		public static void main(String[] args)
+			{
+				BirdSighting test001 = new BirdSighting();
+				System.out.println("Bird Species:  " + test001.getBirdSeen());
+				System.out.println("Number Seen:  " + test001.getNumberSeen());
+				System.out.println("Day Of Year Seen:  " + test001.getDateSeen());
+			}
 	}
