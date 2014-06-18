@@ -17,6 +17,7 @@ public class TestBirdSighting
 				BirdSighting test001 = new BirdSighting();
 				System.out.println("Bird Species:  " + test001.getBirdSeen());
 				System.out.println("Number Seen:  " + test001.getNumberSeen());
+				test001.getDateSeen();
 				System.out.println("Day Of Year Seen:  " + test001.getDateSeen());
 			}
 	}
