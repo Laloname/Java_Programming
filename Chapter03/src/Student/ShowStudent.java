@@ -6,7 +6,7 @@ package Student;
  * Created by Kimberly Henry <kimbelry.henry@outlook.com>
  * On 17-Jun-2014
  * At: 7:34 PM
- *
+ * <p/>
  * Write a class named ShowStudent that instantiates a Student object from the class you created and assign values to
  * its fields. Compute the Student grade point average, and then display all the values associated with the Student.
  * Save the application as ShowStudent.java.

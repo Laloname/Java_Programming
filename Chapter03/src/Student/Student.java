@@ -6,7 +6,7 @@ package Student;
  * Created by Kimberly Henry <kimbelry.henry@outlook.com>
  * On 17-Jun-2014
  * At: 6:14 PM
- *
+ * <p/>
  * Create a class named Student. A Student has fields for an ID number, number of credit hours earned, and number of
  * points earned. (For example, many schools compute grade point averages based on a scale of 4, so a three-credit-hour
  * class in which a student earns an A is worth 12 points.) Include methods to assign values to all fields. A Student
@@ -20,6 +20,12 @@ public class Student
 		private int creditHoursEarned;
 		private int pointsEarned;
 		private double gradePointAverage;
+		public Student()
+			{
+				this.studentId = 9999;
+				this.creditHoursEarned = 3;
+				this.pointsEarned = 12;
+			}
 		public void setStudentId(int id)
 			{
 				studentId = id;
