@@ -15,5 +15,15 @@ public class TestBread
 				System.out.println("Bread Type: " + test001.getTypeBread());
 				System.out.println("Bread Calories: " + test001.getCaloriesBread());
 				System.out.println(Bread.MOTTO);
+				System.out.println();
+				Bread test002 = new Bread("White", 89);
+				System.out.println("Bread Type: " + test002.getTypeBread());
+				System.out.println("Bread Calories: " + test002.getCaloriesBread());
+				System.out.println(Bread.MOTTO);
+				System.out.println();
+				Bread test003 = new Bread("Sourdough", 185);
+				System.out.println("Bread Type: " + test003.getTypeBread());
+				System.out.println("Bread Calories: " + test003.getCaloriesBread());
+				System.out.println(Bread.MOTTO);
 			}
 	}
