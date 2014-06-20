@@ -18,20 +18,20 @@ package Tip_Top_Bakery;
  */
 public class Bread
 	{
-		private String typeBread;
-		private int caloriesBread;
-		public final static String MOTTO = "The staff of life.";
+		private String breadType;
+		private int breadCalories;
+		public final static String MOTTO = "The Staff Of Life";
 		public Bread(String type, int calories)
 			{
-				typeBread = type;
-				caloriesBread = calories;
+				this.breadType = type;
+				this.breadCalories = calories;
 			}
-		public String getTypeBread()
+		public String getBreadType()
 			{
-				return typeBread;
+				return breadType;
 			}
-		public int getCaloriesBread()
+		public int getBreadCalories()
 			{
-				return caloriesBread;
+				return breadCalories;
 			}
 	}

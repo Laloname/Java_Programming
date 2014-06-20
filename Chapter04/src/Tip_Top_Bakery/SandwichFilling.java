@@ -14,16 +14,16 @@ package Tip_Top_Bakery;
  */
 public class SandwichFilling
 	{
-		private String fillingSandwich;
+		private String typeFilling;
 		private int fillingCalories;
-		public SandwichFilling(String filling, int calories)
+		public SandwichFilling(String filling, int cals)
 			{
-				fillingSandwich = filling;
-				fillingCalories = calories;
+				this.typeFilling = filling;
+				this.fillingCalories = cals;
 			}
-		public String getFillingSandwich()
+		public String getTypeFilling()
 			{
-				return fillingSandwich;
+				return typeFilling;
 			}
 		public int getFillingCalories()
 			{

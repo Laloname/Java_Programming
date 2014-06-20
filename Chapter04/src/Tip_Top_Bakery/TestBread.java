@@ -11,19 +11,19 @@ public class TestBread
 	{
 		public static void main(String[] args)
 			{
-				Bread test001 = new Bread("Wheat", 256);
-				System.out.println("Bread Type: " + test001.getTypeBread());
-				System.out.println("Bread Calories: " + test001.getCaloriesBread());
+				Bread test001 = new Bread("Wheat", 69);
+				Bread test002 = new Bread("White", 494);
+				Bread test003 = new Bread("Sourdough", 96);
 				System.out.println(Bread.MOTTO);
+				System.out.println("Bread test001 Bread Type: " + test001.getBreadType());
+				System.out.println("Bread test001 Bread Calories:  " + test001.getBreadCalories());
 				System.out.println();
-				Bread test002 = new Bread("White", 89);
-				System.out.println("Bread Type: " + test002.getTypeBread());
-				System.out.println("Bread Calories: " + test002.getCaloriesBread());
 				System.out.println(Bread.MOTTO);
+				System.out.println("Bread test002 Bread Type: " + test002.getBreadType());
+				System.out.println("Bread test002 Bread Calories:  " + test002.getBreadCalories());
 				System.out.println();
-				Bread test003 = new Bread("Sourdough", 185);
-				System.out.println("Bread Type: " + test003.getTypeBread());
-				System.out.println("Bread Calories: " + test003.getCaloriesBread());
 				System.out.println(Bread.MOTTO);
+				System.out.println("Bread test003 Bread Type: " + test003.getBreadType());
+				System.out.println("Bread test003 Bread Calories:  " + test003.getBreadCalories());
 			}
 	}
