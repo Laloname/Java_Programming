@@ -8,6 +8,10 @@ import java.util.GregorianCalendar;
  * Created by Kimberly Henry <kimbelry.henry@outlook.com>
  * On 20-Jun-2014
  * At: 4:07 PM
+ *
+ * Write an application that uses methods in the GregorianCalendar class to calculate
+ * the number of days from today until the end of the current year. Save the file as
+ * YearEnd.java.
  */
 public class NextYear
 	{
