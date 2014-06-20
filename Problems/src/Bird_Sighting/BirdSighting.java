@@ -25,19 +25,23 @@ public class BirdSighting
 			{
 				birdSeen = "Robin";
 				numberSeen = 1;
-				dateSeen = new GregorianCalendar();
+				dateSeen = new GregorianCalendar(0, 12, 1);
 			}
-		final public GregorianCalendar getDateSeen()
+		public BirdSighting(String bird, int seen, int year, int month, int dayOfMonth)
 			{
-				dateSeen.set(Calendar.DAY_OF_YEAR, 1);
-				dateSeen.get(Calendar.DAY_OF_YEAR);
-				return dateSeen;
+				birdSeen = bird;
+				numberSeen = seen;
+				dateSeen = new GregorianCalendar(year, month, dayOfMonth);
 			}
-		final public String getBirdSeen()
+		public int getDateSeen()
+			{
+				return dateSeen.get(Calendar.DAY_OF_YEAR);
+			}
+		public String getBirdSeen()
 			{
 				return birdSeen;
 			}
-		final public int getNumberSeen()
+		public int getNumberSeen()
 			{
 				return numberSeen;
 			}
