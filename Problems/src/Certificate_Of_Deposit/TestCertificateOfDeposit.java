@@ -1,5 +1,4 @@
 package Certificate_Of_Deposit;
-import java.util.Scanner;
 /**
  * Project:  Java Programming
  * Package:  Certificate_Of_Deposit
@@ -18,16 +17,11 @@ public class TestCertificateOfDeposit
 	{
 		public static void main(String[] args)
 			{
-				CertificateOfDeposit test001 = new CertificateOfDeposit();
-				Scanner enter = new Scanner(System.in);
-				System.out.print("Enter Certificate Number: ");
-				test001.setCertificateNumber(enter.nextInt());
-				System.out.print("Enter Account Owners Last Name: ");
-				test001.setAccountOwnerLastName(enter.nextLine());
-				System.out.print("Enter Account Balance: ");
-				enter.nextLine();
-				test001.setAccountBalance(enter.nextDouble());
-				System.out.print("Enter Issue Year");
-				test001.setIssueDate();
+				CertificateOfDeposit test001 = new CertificateOfDeposit(23, "Henry", 2500.00, 2013, 7, 20);
+				System.out.println("Certificate Number: " + test001.getCertificateNumber());
+				System.out.println("Owner Last Name: " + test001.getAccountOwnerLastName());
+				System.out.println("Account Balance: " + test001.getAccountBalance());
+				System.out.println("Issue Date: " + test001.getIssueDate());
+				System.out.println("Maturity Date: " + test001.calculateMaturityDate());
 			}
 	}

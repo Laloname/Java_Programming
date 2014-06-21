@@ -1,6 +1,7 @@
 package Certificate_Of_Deposit;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
+import java.util.Scanner;
 
 import static com.sun.javafx.fxml.expression.Expression.add;
 /**
@@ -20,43 +21,56 @@ import static com.sun.javafx.fxml.expression.Expression.add;
  */
 public class CertificateOfDeposit
 	{
+		Scanner enter = new Scanner(System.in);
 		private int certificateNumber;
 		private String accountOwnerLastName;
 		private double accountBalance;
 		private GregorianCalendar issueDate;
 		private GregorianCalendar maturityDate;
-		public CertificateOfDeposit(int certificate, String lastName, double balance, GregorianCalendar issueDate)
+		public CertificateOfDeposit(int certificate, String lastName, double balance, int year, int month, int dayOfMonth)
 			{
 				certificateNumber = certificate;
 				accountOwnerLastName = lastName;
 				accountBalance = balance;
-				issueDate = new GregorianCalendar();
+				issueDate = new GregorianCalendar(year, month, dayOfMonth);
 				maturityDate = calculateMaturityDate();
 			}
-		public void setCertificateNumber(int certificate)
+		public CertificateOfDeposit()
 			{
-				certificateNumber = certificate;
+				super();
+			}
+		public void setCertificateNumber()
+			{
+				System.out.print("Certificate Number: ");
+				certificateNumber = enter.nextInt();
 			}
 		public int getCertificateNumber()
 			{
 				return certificateNumber;
 			}
-		public void setAccountOwnerLastName(String lastName)
+		public void setAccountOwnerLastName()
 			{
-				accountOwnerLastName = lastName;
+				accountOwnerLastName = enter.nextLine();
 			}
 		public String getAccountOwnerLastName()
 			{
 				return accountOwnerLastName;
 			}
-		public void setAccountBalance(double balance)
+		public void setAccountBalance()
 			{
-				accountBalance = balance;
+				accountBalance = enter.nextDouble();
 			}
 		public double getAccountBalance()
 			{
 				return accountBalance;
 			}
+		/**
+		 * public void setIssueDate(int year, int month, int dayOfMonth)
+		 * {
+		 * System.out.print("Year, Month, and Day of Month Issued: ");
+		 * issueDate = new GregorianCalendar(enter.nextInt(year), enter.nextInt(month), enter.nextInt(dayOfMonth));
+		 * }*
+		 */
 		public GregorianCalendar getIssueDate()
 			{
 				return issueDate;
