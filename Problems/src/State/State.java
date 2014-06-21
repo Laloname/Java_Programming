@@ -25,14 +25,12 @@ public class State
 	{
 		private String stateName;
 		private int statePopulation;
-		private CapitalCity capitalCity = new CapitalCity();
-		private PopulationCity populationCity = new PopulationCity();
-		public State(String stateName, int statePopulation, String cap, int pop, String city, int citypop)
+		private CapitalCity capitalCity;
+		public State(String stateName, int statePopulation, String cap, int pop)
 			{
 				this.stateName = stateName;
 				this.statePopulation = statePopulation;
-				this.capitalCity = new CapitalCity();
-				this.populationCity = new PopulationCity();
+				this.capitalCity = new CapitalCity(cap, pop);
 			}
 		public void setStateName(String state)
 			{
@@ -52,54 +50,32 @@ public class State
 			}
 		private static class CapitalCity
 			{
-				String capital;
-				int population;
-				CapitalCity()
-					{
-						setPopulation(population);
-						setCapital(capital);
-					}
-				public void setCapital(String cap)
+				static String capital;
+				static int population;
+				public CapitalCity(String cap, int pop)
 					{
 						capital = cap;
-					}
-				public String getCapital()
-					{
-						return capital;
-					}
-				public void setPopulation(int pop)
-					{
 						population = pop;
+						{
+							getCapitaCityl();
+							{
+								return capital;
+							}
+						public void setCapital (String cap)
+						{
+							capital = cap;
+						}
+						public String getCapital ()
+						{
+							return capital;
+						}
+						public void setPopulation ( int pop)
+						{
+							population = pop;
+						}
+						public int getPopulation ()
+						{
+							return population;
+						}
+						}
 					}
-				public int getPopulation()
-					{
-						return population;
-					}
-			}
-		private class PopulationCity
-			{
-				String cityName;
-				int cityPopulation;
-				PopulationCity()
-					{
-						setCityPopulation(cityPopulation);
-						setCityName(cityName);
-					}
-				public void setCityName(String city)
-					{
-						cityName = city;
-					}
-				public String getCityName()
-					{
-						return cityName;
-					}
-				public void setCityPopulation(int citypop)
-					{
-						cityPopulation = citypop;
-					}
-				public int getCityPopulation()
-					{
-						return cityPopulation;
-					}
-			}
-	}
