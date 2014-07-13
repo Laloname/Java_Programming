@@ -5,7 +5,8 @@
       <module fileurl="file://$PROJECT_DIR$/Chapter01/Chapter01.iml" filepath="$PROJECT_DIR$/Chapter01/Chapter01.iml" group="Completed Chapters" />
       <module fileurl="file://$PROJECT_DIR$/Chapter02/Chapter02.iml" filepath="$PROJECT_DIR$/Chapter02/Chapter02.iml" group="Completed Chapters" />
       <module fileurl="file://$PROJECT_DIR$/Chapter03/Chapter03.iml" filepath="$PROJECT_DIR$/Chapter03/Chapter03.iml" group="Completed Chapters" />
-      <module fileurl="file://$PROJECT_DIR$/Chapter04/Chapter04.iml" filepath="$PROJECT_DIR$/Chapter04/Chapter04.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter04/Chapter04.iml" filepath="$PROJECT_DIR$/Chapter04/Chapter04.iml" group="Completed Chapters" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter05/Chapter05.iml" filepath="$PROJECT_DIR$/Chapter05/Chapter05.iml" />
       <module fileurl="file://$PROJECT_DIR$/Problems/Problems.iml" filepath="$PROJECT_DIR$/Problems/Problems.iml" />
     </modules>
   </component>

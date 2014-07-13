@@ -19,11 +19,6 @@
     <option name="pathToUserRulesConfiguration" value="" />
     <option name="pathToJarWithRules" value="" />
   </component>
-  <component name="CopyrightManager" default="">
-    <LanguageOptions name="JAVA">
-      <option name="fileTypeOverride" value="1" />
-    </LanguageOptions>
-  </component>
   <component name="DaemonCodeAnalyzer">
     <disable_hints />
   </component>

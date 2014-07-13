@@ -11,7 +11,7 @@ import static com.sun.javafx.fxml.expression.Expression.add;
  * Created by Kimberly Henry <kimbelry.henry@outlook.com>
  * On 20-Jun-2014
  * At: 4:43 PM
- *
+ * <p/>
  * Create a CertificateOfDeposit class. The class contains data fields that hold a
  * certificate number, account holder’s last name, balance, issue date, and maturity
  * date, using GregorianCalendar objects for each date. Provide get and set
@@ -27,12 +27,12 @@ public class CertificateOfDeposit
 		private double accountBalance;
 		private GregorianCalendar issueDate;
 		private GregorianCalendar maturityDate;
-		public CertificateOfDeposit(int certificate, String lastName, double balance, int year, int month, int dayOfMonth)
+		public CertificateOfDeposit(int certificate, String lastName, double balance, int year, int month, int day)
 			{
 				certificateNumber = certificate;
 				accountOwnerLastName = lastName;
 				accountBalance = balance;
-				issueDate = new GregorianCalendar(year, month, dayOfMonth);
+				issueDate = new GregorianCalendar(2013, 7, 20);
 				maturityDate = calculateMaturityDate();
 			}
 		public CertificateOfDeposit()
@@ -64,19 +64,19 @@ public class CertificateOfDeposit
 			{
 				return accountBalance;
 			}
-		/**
-		 * public void setIssueDate(int year, int month, int dayOfMonth)
-		 * {
-		 * System.out.print("Year, Month, and Day of Month Issued: ");
-		 * issueDate = new GregorianCalendar(enter.nextInt(year), enter.nextInt(month), enter.nextInt(dayOfMonth));
-		 * }*
-		 */
+		public void setIssueDate()
+			{
+				int year = issueDate.get(Calendar.YEAR);
+				int month = issueDate.get(Calendar.MONTH);      // 0 to 11
+				int day = issueDate.get(Calendar.DAY_OF_MONTH);
+			}
 		public GregorianCalendar getIssueDate()
 			{
 				return issueDate;
 			}
 		public GregorianCalendar calculateMaturityDate()
 			{
+				setIssueDate();
 				issueDate.add(Calendar.YEAR, 1);
 				return maturityDate;
 			}
