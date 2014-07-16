@@ -27,9 +27,10 @@ package Park;
  */
 public class TestPark
 	{
-		//TODO and fields, constructors, and methods;
 		public static void main(String[] args)
 			{
-				//TODO add methods;
+				Park test001 = new Park();
+				test001.isHasPicnic();
+				test001.isHasPlayground();
 			}
 	}
