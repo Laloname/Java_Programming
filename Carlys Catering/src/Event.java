@@ -24,7 +24,7 @@ public class Event
 		public static final int LARGE_EVENT_MAX = 50;
 		private String eventNumber;
 		private int guests;
-		private double price;
+		private double totalBill;
 		
 		//TODO and fields, constructors, and methods;
 		public static void main(String[] args)
@@ -37,12 +37,12 @@ public class Event
 				System.out.println("Enter the event number: ");
 				eventNumber = enter.nextLine();
 			}
-		public void setGuests(int guests)
+		public void setGuests()
 			{
 				Scanner enter = new Scanner(System.in);
 				System.out.println("Enter the number of guest attending ");
 				guests = enter.nextInt();
-				price =  guests * PRICE_PER_GUEST;
+				totalBill = guests * PRICE_PER_GUEST;
 			}
 		public String getEventNumber()
 			{
@@ -54,6 +54,6 @@ public class Event
 			}
 		public double getPrice()
 			{
-				return price;
+				return totalBill;
 			}
 	}
