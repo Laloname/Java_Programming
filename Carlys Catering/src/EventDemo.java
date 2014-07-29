@@ -22,15 +22,12 @@
  */
 public class EventDemo
 	{
-
 		public static void main(String[] args)
 			{
 				Event test001 = new Event();
 				test001.setEventNumber();
 				test001.setGuests();
-				test001.getPrice();
 				CarlysEventPriceWithMethods.displayMotto();
-				CarlysEventPriceWithMethods.displayEvent(test001);
-
+				CarlysEventPriceWithMethods.displayEvent(Integer.parseInt(test001.getEventNumber(test001.getGuests(test001.isLargeEvent(test001.getPrice())))));
 			}
 	}

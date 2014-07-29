@@ -31,7 +31,7 @@ public class CarlysEventPriceWithMethods
 			{
 				getGuests();
 				displayMotto();
-				//displayEvent(guests);
+				displayEvent(guests);
 			}
 		public static int getGuests()
 			{
@@ -44,16 +44,13 @@ public class CarlysEventPriceWithMethods
 				getEventNumber();
 				return getEventNumber();
 			}
-		public static void displayEvent(Event object)
+		public static void displayEvent(int guests)
 			{
 				boolean isLargeEvent = (guests > 49);
-				totalBill = guests * PRICE_PER_GUEST;
-
-				System.out.println("Number of guests attending: " + guests);
+				System.out.println("Number of guests attending: " + getGuests());
 				System.out.println("Price Per Guest: " + PRICE_PER_GUEST);
 				System.out.println("Total Bill: " + totalBill);
 				System.out.println("Is this a large event: " + isLargeEvent);
-
 			}
 		public static void displayMotto()
 			{

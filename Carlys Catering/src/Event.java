@@ -20,17 +20,15 @@ import java.util.Scanner;
  */
 public class Event
 	{
-		public static final double PRICE_PER_GUEST = 35.00;
+		public static double pricePerGuestHigh = 35.00;
+		public static double pricePerGuestLow = 32.00;
 		public static final int LARGE_EVENT_MAX = 50;
 		private String eventNumber;
 		private int guests;
-		private double totalBill;
-		
-		//TODO and fields, constructors, and methods;
-		public static void main(String[] args)
-			{
-				//TODO add methods;
-			}
+		private double pricePerEvent;
+
+
+
 		public void setEventNumber()
 			{
 				Scanner enter = new Scanner(System.in);
@@ -42,18 +40,26 @@ public class Event
 				Scanner enter = new Scanner(System.in);
 				System.out.println("Enter the number of guest attending ");
 				guests = enter.nextInt();
-				totalBill = guests * PRICE_PER_GUEST;
 			}
-		public String getEventNumber()
+		public boolean isLargeEvent()
+			{
+				if (guests >= LARGE_EVENT_MAX)
+					{
+						return true;
+					}
+				else if (guests < LARGE_EVENT_MAX)
+					{
+						return false;
+					}
+				return isLargeEvent();
+			}
+
+		public String getEventNumber(int guests)
 			{
 				return eventNumber;
 			}
-		public int getGuests()
+		public int getGuests(boolean largeEvent)
 			{
 				return guests;
-			}
-		public double getPrice()
-			{
-				return totalBill;
 			}
 	}
