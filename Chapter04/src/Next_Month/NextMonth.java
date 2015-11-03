@@ -20,7 +20,7 @@ public class NextMonth
 				GregorianCalendar today = new GregorianCalendar();
 				int currentDay = today.get(Calendar.DAY_OF_MONTH);
 				System.out.println("Today is the " + currentDay + "th day of the month.");
-				System.out.println("There is " + ((today.get(Calendar.DAY_OF_MONTH) + 1) -
-				                                  (today.getActualMaximum(Calendar.MONTH))) + " days left in the month.");
+				System.out.println("There is " + ((today.get(Calendar.DAY_OF_MONTH)) -
+				                                  (today.getActualMaximum(Calendar.DAY_OF_MONTH))) + " days left in the month.");
 			}
 	}
